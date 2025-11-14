@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Đăng ký tài khoản</title>
+
+    <style> /*Thẻ <style> được dùng để chứa các quy tắc CSS (Cascading Style Sheets) 
+            trực tiếp bên trong file HTML. 
+            CSS là ngôn ngữ được dùng để mô tả phong cách, 
+            bố cục, và cách trình bày của các phần tử HTML.*/
+        /*áp dung khỏag đệm dưới cho mỗi hàng của bảng 
+        (áp dụng cho tất cả các hàng (<tr>) của bảng đăng ký (<table class="kichthuoc">).)*/
+        .kichthuoc tr{
+            padding-bottom: 15px;  /*khỏag đệm (pixel)*/
+            display: block;         /*Việc đặt display: block; buộc thẻ <tr> hoạt động như một khối độc lập (block-level element) trên trang, giúp thuộc tính padding-bottom 
+                                    (và các thuộc tính layout khác) hoạt động đúng.
+                                    - phần tử đó sẽ chiếm toàn bộ chiều rộng (vd 1 số thẻ mặc định là block như <h1>, <p>, <table>....), 
+                                        bắt đầu trên dòng mới, có thể điều chỉnh kích thước*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Đăng ký tài khoản!</h1>
+    <h3>Nhập và lựa chọn các thông tin đăng ký.</h3>
+    <form>
+        <table class="kichthuoc">
+            <tr>
+                <td>
+                    <!-- <label for="ten">Tên</label> -->
+                     <!-- sử dụng placeholder="Tên": để chữ "tên" hiện trong text và khi điền thông tin thì sẽ bị mất chữ tên đi -->
+                    <input type="text" id="ten" name="ten" size="25" placeholder="Tên">
+                </td>
+                <td>
+                    <!-- <label for="hodem">Họ đệm</label> -->
+                    <input type="text" id="hodem" name="hodem" size="25" placeholder="Họ đệm">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- <label for="email">Địa chỉ Email</label> -->
+                    <input type="Email" id="email" name="email" size="25" placeholder="Địa chỉ Email">
+                </td>
+                <td>
+                    <!-- <label for="sdt">Số điện thoại</label> -->
+                    <input type="text" id="sdt" name="sdt" size="25" placeholder="Số điện thoại">
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>
+                    <select id="tp" name="tp">
+                        <option value="">Chọn thành phố</option>
+                        <option value="HN">Hà Nội</option>
+                        <option value="HCM">Hồ Chí Minh</option>
+                        <option value="HL">Hạ Long</option>
+                        <option value="HP">Hải Phòng</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="tinh"  name="tinh">
+                        <option value="">Chọn tỉnh</option>
+                        <option value="QN">Quảng Ninh</option>
+                        <option value="BN">Bắc Ninh</option>
+                        <option value="HY">Hưng Yên</option>
+                    </select>
+                </td>
+            </tr> -->
+            <tr>
+                <td>
+                    <p>
+                        <select id="tp" name="tp">
+                            <option value="">Chọn thành phố</option>
+                            <option value="HN">Hà Nội</option>
+                            <option value="HCM">Hồ Chí Minh</option>
+                            <option value="HL">Hạ Long</option>
+                            <option value="HP">Hải Phòng</option>
+                        </select>
+                        <select id="tinh"  name="tinh">
+                            <option value="">Chọn tỉnh</option>
+                            <option value="QN">Quảng Ninh</option>
+                            <option value="BN">Bắc Ninh</option>
+                            <option value="HY">Hưng Yên</option>
+                        </select>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea id="ghichu" name="ghichu" rows="10" cols="52" placeholder="Ghi chú"></textarea>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <button type="submit">Đăng ký</button>
+        </p>
+    </form>
+</body>
+</html>
