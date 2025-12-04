@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(232, 209, 227);
+    
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/041/043/728/small_2x/ai-generated-sunset-sky-background-with-tiny-clouds-and-rainbow-photo.jpg");
+    background-size: cover;
+
+    /* Đặt chiều rộng tối đa cho nội dung, ví dụ: 80% của viewport */
+    max-width: 80%; 
+    
+    /* Thiết lập lề trái và lề phải thành auto để căn giữa khối body */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Có thể thêm margin-top và margin-bottom nếu cần */
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    
+}
+#h1 {
+    font-family:'Times New Roman', Times, serif;
+    color: red;
+    text-align: center;
+    
+}
+.h3 {
+    color: blue;
+    
+}
+.btn {
+    background-color: rgb(22, 139, 241);
+}
+.form {
+    background: lightgrey;
+    padding: 20px 30px;
+    border-radius: 20px;
+}

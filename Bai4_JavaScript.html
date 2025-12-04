@@ -1,0 +1,45 @@
+<html>
+    <head>
+		<!-- mở trag web ra là hiện -->
+        <!-- <script lang="javascript">
+            alert("Hello World");
+        </script> -->
+        <script language="javascript" src="demo.js"></script>
+		<!-- <script>
+			var x = "Lập trình Web"; 
+			x = 10;
+
+			var y="20";
+			var z = x+y;
+
+			var n = parseInt("50");
+		</script>-->
+		<button id="myButton">Nhấn vào đây</button>
+		<script>
+			document.getElementById("myButton").onclick = function(){
+				alert("Sự kiện đã được kích hoạt!");
+			}
+		</script>
+		
+		</script>
+		<form id="myForm">
+			<input type="text" id="name" placeholder="Nhập tên">
+			<button type="submit">Gửi</button>
+		</form>
+		<script>
+			document.getElementById("myForm").addEventListener("submit", function (event){
+				let name = document.getElementById("name").value;
+				if(name === ""){
+					alert("Vui lòng nhập tên!");
+					event.preventDefault(); //ngăn chặn gửi form
+				}
+			})
+		</script>
+    </head> 
+    <body>
+		<!-- click mới hiện -->
+        <button id="btnTest" onclick="alert('Hello')">Xin chào</button>  
+
+		
+    </body>
+</html>
