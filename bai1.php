@@ -26,5 +26,25 @@
     <?php
         echo "Nguyễn Thị Phương Loan<br>";
     ?>
+    <hr>
+    <?php
+        function showValue(){
+            $a=5;
+            echo $a; //phạm vi cục bộ
+        }
+        showValue();     //-> 5
+        //echo $a;  //-> không có
+    ?>
+    <br>
+    <?php
+        $a=1;
+        $b=2;
+        function sum(){
+            global $a, $b;
+            $b = $a+$b;
+        }
+        sum();
+        echo $b;  //3
+    ?>
 </body>
 </html>
