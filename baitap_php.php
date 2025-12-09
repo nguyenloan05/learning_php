@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dãy số từ 1 đến 100</title>
+    <title>Dãy số từ 1-100</title>
 </head>
 <body>
     <?php
