@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Đăng ký tài khoản</title>
+    <script language="javascript" src="bai5_sukienForm.js"></script>
+    
+</head>
+
+<body>
+    <h1>Đăng ký tài khoản!</h1>
+    <p>Nhập và lựa chọn thông tin đăng ký</p>
+    <form id="myForm">
+        <input type="text" id="name" name="name" placeholder="Tên">
+        <input type="text" id="hodem" name="hodem" placeholder="Họ đệm"><br><br>
+        <input type="text" id="email" name="email" placeholder="Địa chỉ Email">
+        <input type="text" id="phone" name="phone" placeholder="SĐT"><br><br>
+
+        <!-- <label>Chọn thành phố</label> -->
+        <select id="tp" name="tp">
+            <option value="">Chọn thành phố</option>
+            <option value="HN">Hà Nội</option>
+            <option value="HCM">Hồ Chí Minh</option>
+            <option value="HL">Hạ Long</option>
+            <option value="HP">Hải Phòng</option>
+        </select>
+        <select id="tinh" name="tinh">
+            <option value="" disabled selected>Tỉnh</option>
+            <option value="HD">Hải Dương</option>
+            <option value="HG">Hà Giang</option>
+            <option value="QN">Quảng Ninh</option>
+            <option value="HY">Hưng Yên</option>
+            <option value="VP">Vĩnh Phúc</option>
+            <option value="PT">Phú Thọ</option>
+            <option value="NT">Nha Trang</option>
+        </select>
+        <br><br>
+
+        <textarea id="ghichu" name="ghichu" rows="10" cols="50" placeholder="Ghi chú"></textarea>
+        <br><br>
+
+        <input type="button" id="submit" name="dangky" value="Đăng ký">
+    </form>
+
+    
+</script>
+</body>
+<!-- <script>
+	document.getElementById("myForm").addEventListener("submit", function (event){
+		let name = document.getElementById("name").value;
+		if(name === ""){
+			alert("Vui lòng nhập tên!");
+			event.preventDefault(); //ngăn chặn gửi form
+		}
+	});
+</script> -->
+
+</html>
