@@ -112,6 +112,8 @@
     <hr>
     <?php
         $x=7; $y=3; 
+        echo "x = ", $x . "<br>";
+        echo "y = ", $y . "<br>";
         echo "Phép cộng 2 số: ", $z = $x+$y;
         echo "<br>";
         echo "Phép trừ 2 số: ", $z = $x - $y;
@@ -122,12 +124,16 @@
         echo "<br>";
         echo "Phép chia lấy dư: ", $z = $x % $y;
         echo "<br>";
-        
-        echo "Giá trị ban đầu của x: $x<br>";
-        echo "Phép toán tăng lên 1 giá trị: ", $x++;
+        $x = 7;
+        echo "Phép toán tăng lên 1 giá trị: ". $x++ . " => x=$x";
         echo "<br>";
-        echo "Giá trị ban đầu của x: $x<br>";
-        echo "Phép toán giảm 1 giá trị: ", $x--;
+        $x = 7;
+        echo "Phép toán tăng lên 1 giá trị: ". ++$x . "<br>";
+        $x = 7;
+        echo "Phép toán giảm 1 giá trị: " . $x-- . " => x=$x";
+        echo "<br>";
+        $x = 7;
+        echo "Phép toán giảm lên 1 giá trị: ". --$x . "<br>";
         
         // echo "Giá trị ban đầu của x: $x<br>";
         // echo "Hậu tố tăng (x++): " . $x++ . " (sau đó x = $x)<br>";
