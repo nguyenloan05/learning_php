@@ -9,8 +9,7 @@
 	 
 	// // Bước 3. Tạo câu truy vấn
 	// $sql = "INSERT INTO Khoa (TenKhoa, GhiChu) 
-	// 		VALUES ('Khoa CNTT', 'Khoa CNTT - Trường UTT'), 
-	// 				('Khoa KTVT', 'Khoa Kinh tế vận tải - Trường UTT')";
+	// 		VALUES ('Khoa KTVT', 'Khoa Kinh tế vận tải - Trường UTT')";
 	 
 	// // Bước 4. thực hiện thêm record
 	// if (mysqli_query($conn, $sql)) 
@@ -36,7 +35,7 @@
 	// Bước 3. Tạo câu truy vấn
 	// $sql2 = "UPDATE Khoa SET TenKhoa = 'UTT-CNTT', 
 	// 		GhiChu = 'Trường ĐH Công nghệ GTVT' WHERE MaKhoa=1";
-	 
+	// var_dump($sql2);
 	// // Bước 4. thực hiện thêm record
 	// if (mysqli_query($conn, $sql2)) 
 	// {
@@ -47,14 +46,15 @@
 	// }
 
 	$sql3 = "DELETE FROM Khoa WHERE MaKhoa = 2";
+	var_dump($sql3);
 	if (mysqli_query($conn, $sql3)) 
 	{
-	    echo "Xóa dữ liệu thành công";
+	    //echo "Xóa dữ liệu thành công";
+		var_dump(mysqli_query($conn, $sql3));
 	} 
 	else {
 	    echo "Lỗi: " .$sql3. "<br>" . mysqli_error($conn);
 	}
-
 	 
 	// Bước 5. Ngắt kết nối
 	mysqli_close($conn);
